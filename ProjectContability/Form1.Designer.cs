@@ -70,6 +70,7 @@
             this.ingresoDeDatosToolStripMenuItem.Name = "ingresoDeDatosToolStripMenuItem";
             this.ingresoDeDatosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ingresoDeDatosToolStripMenuItem.Text = "Ingreso de Datos";
+            this.ingresoDeDatosToolStripMenuItem.Click += new System.EventHandler(this.ingresoDeDatosToolStripMenuItem_Click);
             // 
             // libroDiarioToolStripMenuItem
             // 
@@ -82,8 +83,9 @@
             // tablaDeDiarioToolStripMenuItem
             // 
             this.tablaDeDiarioToolStripMenuItem.Name = "tablaDeDiarioToolStripMenuItem";
-            this.tablaDeDiarioToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.tablaDeDiarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tablaDeDiarioToolStripMenuItem.Text = "Tabla de Diario";
+            this.tablaDeDiarioToolStripMenuItem.Click += new System.EventHandler(this.tablaDeDiarioToolStripMenuItem_Click);
             // 
             // libroMayorToolStripMenuItem
             // 
@@ -96,8 +98,9 @@
             // tablaDeMayorToolStripMenuItem
             // 
             this.tablaDeMayorToolStripMenuItem.Name = "tablaDeMayorToolStripMenuItem";
-            this.tablaDeMayorToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.tablaDeMayorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tablaDeMayorToolStripMenuItem.Text = "Tabla de Mayor";
+            this.tablaDeMayorToolStripMenuItem.Click += new System.EventHandler(this.tablaDeMayorToolStripMenuItem_Click);
             // 
             // balanceToolStripMenuItem
             // 
@@ -110,8 +113,9 @@
             // tablaDeBalanceToolStripMenuItem
             // 
             this.tablaDeBalanceToolStripMenuItem.Name = "tablaDeBalanceToolStripMenuItem";
-            this.tablaDeBalanceToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.tablaDeBalanceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tablaDeBalanceToolStripMenuItem.Text = "Tabla de balance";
+            this.tablaDeBalanceToolStripMenuItem.Click += new System.EventHandler(this.tablaDeBalanceToolStripMenuItem_Click);
             // 
             // pictureBox1
             // 
@@ -148,6 +152,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Proyecto de Contabilidad";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
