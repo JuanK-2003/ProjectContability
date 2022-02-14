@@ -29,9 +29,9 @@ namespace ProjectContability
             label1.Enabled = false;
             textBox1.Enabled = false;
             button1.Enabled = false;
-            checkBox1.Enabled = false;
+            radioButton6.Enabled = false;
             textBox2.Enabled = false;
-            checkBox2.Enabled = false;
+            radioButton7.Enabled = false;
             textBox3.Enabled = false;
             comboBox1.Enabled = false;
             button2.Enabled = false;
@@ -42,7 +42,7 @@ namespace ProjectContability
             Data temp = new Data();
             temp.NameCuenta = textBox1.Text;
             comboBox1.Items.Add(textBox1.Text);
-            textBox1.Text = "";
+            textBox1.Text = "";   
             data.Add(temp);
         }
 
@@ -50,18 +50,28 @@ namespace ProjectContability
         {
             if (radioButton2.Checked)
             {
-                if (checkBox1.Checked)
+                if(radioButton6.Checked)
                 {
+                    label1.Enabled = false;
+                    textBox1.Enabled = false;
+                    button1.Enabled = false;
+                    radioButton7.Enabled = false;
+                    textBox3.Enabled = false;
                     Data data2 = new Data();
-                    data2.Credit = double.Parse(textBox2.Text);
+                    data2.Credit =  double.Parse(textBox2.Text);
                     comboBox1.SelectedItem = data2;
                     textBox2.Text = "";
                     data.Add(data2);
                     MessageBox.Show(" Se agregaron los datos a los libros correspondientes (Crédito)");
                 }
 
-                if (checkBox2.Checked)
+                if(radioButton7.Checked)
                 {
+                    label1.Enabled = false;
+                    textBox1.Enabled = false;
+                    button1.Enabled = false;
+                    radioButton6.Enabled = false;
+                    textBox2.Enabled = false;
                     Data data2 = new Data();
                     data2.Debit = double.Parse(textBox3.Text);
                     comboBox1.SelectedItem = data2;
@@ -72,8 +82,13 @@ namespace ProjectContability
             }
             if (radioButton3.Checked)
             {
-                if (checkBox1.Checked)
+                if (radioButton6.Checked)
                 {
+                    label1.Enabled = false;
+                    textBox1.Enabled = false;
+                    button1.Enabled = false;
+                    radioButton7.Enabled = false;
+                    textBox3.Enabled = false;
                     Data data2 = new Data();
                     data2.Credit = double.Parse(textBox2.Text);
                     comboBox1.SelectedItem = data2;
@@ -82,8 +97,13 @@ namespace ProjectContability
                     MessageBox.Show(" Se agregaron los datos a los libros correspondientes (Crédito) ");
                 }
 
-                if (checkBox2.Checked)
+                if (radioButton7.Checked)
                 {
+                    label1.Enabled = false;
+                    textBox1.Enabled = false;
+                    button1.Enabled = false;
+                    radioButton6.Enabled = false;
+                    textBox2.Enabled = false;
                     Data data2 = new Data();
                     data2.Debit = double.Parse(textBox3.Text);
                     comboBox1.SelectedItem = data2;
@@ -94,8 +114,13 @@ namespace ProjectContability
             }
             if (radioButton4.Checked)
             {
-                if (checkBox1.Checked)
+                if (radioButton6.Checked)
                 {
+                    label1.Enabled = false;
+                    textBox1.Enabled = false;
+                    button1.Enabled = false;
+                    radioButton7.Enabled = false;
+                    textBox3.Enabled = false;
                     Data data2 = new Data();
                     data2.Credit = double.Parse(textBox2.Text);
                     comboBox1.SelectedItem = data2;
@@ -104,8 +129,13 @@ namespace ProjectContability
                     MessageBox.Show(" Se agregaron los datos a los libros correspondientes (Crédito) ");
                 }
 
-                if (checkBox2.Checked)
+                if (radioButton7.Checked)
                 {
+                    label1.Enabled = false;
+                    textBox1.Enabled = false;
+                    button1.Enabled = false;
+                    radioButton6.Enabled = false;
+                    textBox2.Enabled = false;
                     Data data2 = new Data();
                     data2.Debit = double.Parse(textBox3.Text);
                     comboBox1.SelectedItem = data2;
@@ -116,8 +146,13 @@ namespace ProjectContability
             }
             if (radioButton5.Checked)
             {
-                if (checkBox1.Checked)
+                if (radioButton6.Checked)
                 {
+                    label1.Enabled = false;
+                    textBox1.Enabled = false;
+                    button1.Enabled = false;
+                    radioButton7.Enabled = false;
+                    textBox3.Enabled = false;
                     Data data2 = new Data();
                     data2.Credit = double.Parse(textBox2.Text);
                     comboBox1.SelectedItem = data2;
@@ -126,8 +161,13 @@ namespace ProjectContability
                     MessageBox.Show(" Se agregaron los datos a los libros correspondientes (Crédito) ");
                 }
 
-                if (checkBox2.Checked)
+                if (radioButton7.Checked)
                 {
+                    label1.Enabled = false;
+                    textBox1.Enabled = false;
+                    button1.Enabled = false;
+                    radioButton6.Enabled = false;
+                    textBox2.Enabled = false;
                     Data data2 = new Data();
                     data2.Debit = double.Parse(textBox3.Text);
                     comboBox1.SelectedItem = data2;
@@ -149,11 +189,11 @@ namespace ProjectContability
             }
             else
             {
+                radioButton6.Enabled = false;
                 textBox2.Enabled = false;
+                radioButton7.Enabled = false;
                 textBox3.Enabled = false;
                 button2.Enabled = false;
-                checkBox1.Enabled = false;
-                checkBox2.Enabled = false;
             }
         }
 
@@ -161,14 +201,18 @@ namespace ProjectContability
         {
             if (radioButton2.Checked)
             {
+                radioButton6.Enabled = true;
+                textBox2.Enabled = true;
+                radioButton7.Enabled = true;
+                textBox3.Enabled = true;
+                comboBox1.Enabled = true;
+                button2.Enabled = true;
+            }
+            else
+            {
                 label1.Enabled = false;
                 textBox1.Enabled = false;
                 button1.Enabled = false;
-                checkBox1.Enabled = true;
-                checkBox2.Enabled = true;
-                textBox2.Enabled = true;
-                textBox3.Enabled = true;
-                button2.Enabled = true;
             }
         }
 
@@ -176,14 +220,18 @@ namespace ProjectContability
         {
             if (radioButton3.Checked)
             {
-                label1.Enabled = false;
-                textBox1.Enabled = false;
+                radioButton6.Enabled = true;
                 textBox2.Enabled = true;
+                radioButton7.Enabled = true;
                 textBox3.Enabled = true;
                 comboBox1.Enabled = true;
                 button2.Enabled = true;
-                checkBox1.Enabled = true;
-                checkBox2.Enabled = true;
+            }
+            else
+            {
+                label1.Enabled = false;
+                textBox1.Enabled = false;
+                button1.Enabled = false;
             }
         }
 
@@ -191,50 +239,36 @@ namespace ProjectContability
         {
             if (radioButton4.Checked)
             {
-                label1.Enabled = false;
-                textBox1.Enabled = false;
+                radioButton6.Enabled = true;
                 textBox2.Enabled = true;
+                radioButton7.Enabled = true;
                 textBox3.Enabled = true;
                 comboBox1.Enabled = true;
                 button2.Enabled = true;
-                checkBox1.Enabled = true;
-                checkBox2.Enabled = true;
+            }
+            else
+            {
+                label1.Enabled = false;
+                textBox1.Enabled = false;
+                button1.Enabled = false;
             }
         }
         private void radioButton5_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton5.Checked)
             {
-                label1.Enabled = false;
-                textBox1.Enabled = false;
+                radioButton6.Enabled = true;
                 textBox2.Enabled = true;
+                radioButton7.Enabled = true;
                 textBox3.Enabled = true;
                 comboBox1.Enabled = true;
-                checkBox1.Enabled = true;
-                checkBox2.Enabled = true;
                 button2.Enabled = true;
             }
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox1.Checked)
+            else
             {
                 label1.Enabled = false;
                 textBox1.Enabled = false;
                 button1.Enabled = false;
-                textBox3.Enabled = false;
-            }
-        }
-
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (checkBox2.Checked)
-            {
-                label1.Enabled = false;
-                textBox1.Enabled = false;
-                button1.Enabled = false;
-                textBox2.Enabled = false;
             }
         }
     }
