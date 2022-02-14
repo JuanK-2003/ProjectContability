@@ -50,7 +50,7 @@ namespace ProjectContability
         {
             if (radioButton2.Checked)
             {
-                if(radioButton6.Checked)
+                if(radioButton6.Checked) 
                 {
                     label1.Enabled = false;
                     textBox1.Enabled = false;
@@ -201,6 +201,8 @@ namespace ProjectContability
         {
             if (radioButton2.Checked)
             {
+                label1.Enabled = false;
+                textBox1.Enabled = false;
                 radioButton6.Enabled = true;
                 textBox2.Enabled = true;
                 radioButton7.Enabled = true;
@@ -220,6 +222,8 @@ namespace ProjectContability
         {
             if (radioButton3.Checked)
             {
+                label1.Enabled = false;
+                textBox1.Enabled = false;
                 radioButton6.Enabled = true;
                 textBox2.Enabled = true;
                 radioButton7.Enabled = true;
@@ -239,6 +243,8 @@ namespace ProjectContability
         {
             if (radioButton4.Checked)
             {
+                label1.Enabled = false;
+                textBox1.Enabled = false;
                 radioButton6.Enabled = true;
                 textBox2.Enabled = true;
                 radioButton7.Enabled = true;
@@ -257,6 +263,8 @@ namespace ProjectContability
         {
             if (radioButton5.Checked)
             {
+                label1.Enabled = false;
+                textBox1.Enabled = false;
                 radioButton6.Enabled = true;
                 textBox2.Enabled = true;
                 radioButton7.Enabled = true;
