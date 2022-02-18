@@ -19,11 +19,13 @@ namespace ProjectContability.Class
 
         }
 
-        public Data(string nameCuenta, double credit, double debit)
+        public Data(string nameCuenta, double credit, double debit, int type1, int type2)
         {
             this.NameCuenta = nameCuenta;
             this.Credit = credit;
             this.Debit = debit;
+            this.Type1 = type1;
+            this.Type2 = type2;
         }
 
         public string NameCuenta { get => nameCuenta; set => nameCuenta = value; }
