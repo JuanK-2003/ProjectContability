@@ -61,9 +61,9 @@ namespace ProjectContability
 
             else
             {
-                File.Create("C:\\Users\\Public\\Cuenta.json");
-                //
-                File.Create("C:\\Users\\Public\\Partidas.json");
+                var myFile = File.Create("C:\\Users\\Public\\Cuenta.json"); myFile.Close();
+                var myFile2 = File.Create("C:\\Users\\Public\\Partidas.json"); myFile2.Close();
+
 
 
             }
@@ -262,8 +262,9 @@ namespace ProjectContability
 
         private void button3_Click(object sender, EventArgs e)
         {
-            File.Create("C:\\Users\\Public\\Cuenta.json");0
-            File.Create("C:\\Users\\Public\\Partidas.json");0
+            var myFile = File.Create("C:\\Users\\Public\\Cuenta.json"); myFile.Close();
+            var myFile2 = File.Create("C:\\Users\\Public\\Partidas.json"); myFile2.Close();
+
             cuentaDisponible = new List<Data>();
             partidas = new List<Data>();
             comboBox1.Items.Clear();
