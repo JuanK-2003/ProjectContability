@@ -32,10 +32,15 @@ namespace ProjectContability
                 using(StreamReader sr = new StreamReader(cuentaFile))
                 {
                     cuentaDisponible = JsonConvert.DeserializeObject<List<Data>>(sr.ReadToEnd());
-                    for (int i = 0; i < cuentaDisponible.Count; i++)
+                    if (cuentaDisponible != null)
                     {
-                        comboBox1.Items.Add(cuentaDisponible[i].NameCuenta);
+                        for (int i = 0; i < cuentaDisponible.Count; i++)
+                        {
+                            comboBox1.Items.Add(cuentaDisponible[i].NameCuenta);
+                        }
+                        
                     }
+                    else cuentaDisponible = new List<Data>();
                     sr.Close();
                 }
                 using(StreamReader rs = new StreamReader(partidasFile))
@@ -57,7 +62,10 @@ namespace ProjectContability
             else
             {
                 File.Create("C:\\Users\\Public\\Cuenta.json");
+                //
                 File.Create("C:\\Users\\Public\\Partidas.json");
+
+
             }
         }
         
@@ -128,7 +136,7 @@ namespace ProjectContability
         private void button2_Click(object sender, EventArgs e)
         {
 
-            if(this.comboBox1.SelectedIndex != -1 && textBox2.Text != "" && textBox3.Text != "")
+            if(this.comboBox1.SelectedIndex != -1 && (textBox2.Text != "" || textBox3.Text != ""))
             {
                 double credito = 0;
                 double debito = 0;
@@ -148,9 +156,11 @@ namespace ProjectContability
                     sr.Write(JsonConvert.SerializeObject(partidas));
                     sr.Close();
                 }
+                textBox2.Text = "";
+                textBox3.Text = "";
+                comboBox1.SelectedIndex = -1;
             }
-            textBox2.Text = "";
-            textBox3.Text = "";
+            
         }
         private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
         {
@@ -248,6 +258,15 @@ namespace ProjectContability
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            File.Create("C:\\Users\\Public\\Cuenta.json");0
+            File.Create("C:\\Users\\Public\\Partidas.json");0
+            cuentaDisponible = new List<Data>();
+            partidas = new List<Data>();
+            comboBox1.Items.Clear();
         }
     }
 }

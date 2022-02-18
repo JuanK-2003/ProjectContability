@@ -31,11 +31,13 @@ namespace ProjectContability
                     partidas = JsonConvert.DeserializeObject<List<Data>>(rs.ReadToEnd());
                     rs.Close();
                 }
-                MessageBox.Show("Partidas entrantes" + partidas.Count() + " " + partidas[0].NameCuenta);
+
                 if (partidas == null)
                 {
                     partidas = new List<Data>();
                 }
+
+                MessageBox.Show(partidas.Count() + " " + partidas[0].NameCuenta);
             }
             else
             {

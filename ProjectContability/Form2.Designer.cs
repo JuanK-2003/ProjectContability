@@ -48,6 +48,7 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -69,10 +70,10 @@
             this.panel1.Controls.Add(this.radioButton7);
             this.panel1.Controls.Add(this.radioButton5);
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(6, 5);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(7, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(482, 393);
+            this.panel1.Size = new System.Drawing.Size(542, 491);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -80,10 +81,10 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(11, 136);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton2.Location = new System.Drawing.Point(12, 170);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(172, 29);
+            this.radioButton2.Size = new System.Drawing.Size(208, 33);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Activo Corriente";
@@ -94,9 +95,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(92, 23);
+            this.label2.Location = new System.Drawing.Point(104, 29);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(284, 29);
+            this.label2.Size = new System.Drawing.Size(330, 32);
             this.label2.TabIndex = 31;
             this.label2.Text = "INGRESOS DE DATOS";
             // 
@@ -104,9 +105,10 @@
             // 
             this.radioButton6.AutoSize = true;
             this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(252, 279);
+            this.radioButton6.Location = new System.Drawing.Point(284, 349);
+            this.radioButton6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(94, 29);
+            this.radioButton6.Size = new System.Drawing.Size(113, 33);
             this.radioButton6.TabIndex = 30;
             this.radioButton6.TabStop = true;
             this.radioButton6.Text = "Capital";
@@ -116,10 +118,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Perpetua Titling MT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(127, 321);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(143, 401);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 66);
+            this.button1.Size = new System.Drawing.Size(178, 82);
             this.button1.TabIndex = 18;
             this.button1.Text = "Agregar Cuenta";
             this.button1.UseVisualStyleBackColor = true;
@@ -127,21 +129,21 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(184, 89);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Location = new System.Drawing.Point(207, 111);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(255, 24);
+            this.textBox1.Size = new System.Drawing.Size(286, 29);
             this.textBox1.TabIndex = 24;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 83);
+            this.label1.Location = new System.Drawing.Point(7, 104);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 28);
+            this.label1.Size = new System.Drawing.Size(184, 32);
             this.label1.TabIndex = 21;
             this.label1.Text = "Agregar Cuenta";
             // 
@@ -149,10 +151,10 @@
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(212, 136);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton3.Location = new System.Drawing.Point(238, 170);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(202, 29);
+            this.radioButton3.Size = new System.Drawing.Size(246, 33);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Activo No Corriente";
@@ -163,9 +165,10 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(11, 180);
+            this.radioButton1.Location = new System.Drawing.Point(12, 225);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(158, 29);
+            this.radioButton1.Size = new System.Drawing.Size(193, 33);
             this.radioButton1.TabIndex = 29;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Activo Diferido";
@@ -176,10 +179,10 @@
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(11, 232);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton4.Location = new System.Drawing.Point(12, 290);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(177, 29);
+            this.radioButton4.Size = new System.Drawing.Size(216, 33);
             this.radioButton4.TabIndex = 3;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Pasivo Corriente";
@@ -190,9 +193,10 @@
             // 
             this.radioButton7.AutoSize = true;
             this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(11, 273);
+            this.radioButton7.Location = new System.Drawing.Point(12, 341);
+            this.radioButton7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(163, 29);
+            this.radioButton7.Size = new System.Drawing.Size(201, 33);
             this.radioButton7.TabIndex = 33;
             this.radioButton7.TabStop = true;
             this.radioButton7.Text = "Pasivo Diferido";
@@ -203,10 +207,10 @@
             // 
             this.radioButton5.AutoSize = true;
             this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(252, 232);
-            this.radioButton5.Margin = new System.Windows.Forms.Padding(4);
+            this.radioButton5.Location = new System.Drawing.Point(284, 290);
+            this.radioButton5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(207, 29);
+            this.radioButton5.Size = new System.Drawing.Size(254, 33);
             this.radioButton5.TabIndex = 4;
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "Pasivo No Corriente";
@@ -216,46 +220,46 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(192, 24);
+            this.label3.Location = new System.Drawing.Point(216, 30);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 16);
+            this.label3.Size = new System.Drawing.Size(151, 20);
             this.label3.TabIndex = 32;
             this.label3.Text = "Cuentas ingresadas";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(265, 177);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox3.Location = new System.Drawing.Point(298, 221);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(138, 24);
+            this.textBox3.Size = new System.Drawing.Size(155, 29);
             this.textBox3.TabIndex = 26;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(265, 123);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2.Location = new System.Drawing.Point(298, 154);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(138, 24);
+            this.textBox2.Size = new System.Drawing.Size(155, 29);
             this.textBox2.TabIndex = 25;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(184, 54);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox1.Location = new System.Drawing.Point(207, 68);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(182, 24);
+            this.comboBox1.Size = new System.Drawing.Size(204, 28);
             this.comboBox1.TabIndex = 20;
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Perpetua Titling MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(195, 256);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(219, 320);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(158, 64);
+            this.button2.Size = new System.Drawing.Size(178, 80);
             this.button2.TabIndex = 19;
             this.button2.Text = "AGREGAR A LIBROS";
             this.button2.UseVisualStyleBackColor = true;
@@ -265,9 +269,10 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(110, 127);
+            this.checkBox1.Location = new System.Drawing.Point(124, 159);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(97, 29);
+            this.checkBox1.Size = new System.Drawing.Size(118, 33);
             this.checkBox1.TabIndex = 34;
             this.checkBox1.Text = "Crédito";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -277,9 +282,10 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(110, 181);
+            this.checkBox2.Location = new System.Drawing.Point(124, 226);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(90, 29);
+            this.checkBox2.Size = new System.Drawing.Size(110, 33);
             this.checkBox2.TabIndex = 35;
             this.checkBox2.Text = "Débito";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -288,6 +294,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.checkBox2);
             this.panel2.Controls.Add(this.checkBox1);
@@ -295,20 +302,31 @@
             this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Controls.Add(this.textBox3);
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Location = new System.Drawing.Point(510, 5);
+            this.panel2.Location = new System.Drawing.Point(574, 6);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(478, 393);
+            this.panel2.Size = new System.Drawing.Size(538, 491);
             this.panel2.TabIndex = 1;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(38, 421);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(204, 51);
+            this.button3.TabIndex = 36;
+            this.button3.Text = "reiniciar sesion";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(1000, 402);
+            this.ClientSize = new System.Drawing.Size(1125, 502);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ingreso de Datos";
@@ -343,5 +361,6 @@
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button3;
     }
 }
