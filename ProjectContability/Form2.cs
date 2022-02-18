@@ -36,10 +36,12 @@ namespace ProjectContability
                     {
                         comboBox1.Items.Add(cuentaDisponible[i].NameCuenta);
                     }
+                    sr.Close();
                 }
                 using(StreamReader rs = new StreamReader(partidasFile))
                 {
                     partidas = JsonConvert.DeserializeObject<List<Data>>(rs.ReadToEnd());
+                    rs.Close();
                 }
 
                 if (cuentaDisponible == null)

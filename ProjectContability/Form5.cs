@@ -24,10 +24,29 @@ namespace ProjectContability
 
         private void Form5_Load(object sender, EventArgs e)
         {
-            using (StreamReader rs = new StreamReader(partidasFile))
+            if(validarArchivos())
             {
-                partidas = JsonConvert.DeserializeObject<List<Data>>(rs.ReadToEnd());
+                using (StreamReader rs = new StreamReader(partidasFile))
+                {
+                    partidas = JsonConvert.DeserializeObject<List<Data>>(rs.ReadToEnd());
+                    rs.Close();
+                }
+                MessageBox.Show("Partidas entrantes" + partidas.Count() + " " + partidas[0].NameCuenta);
+                if (partidas == null)
+                {
+                    partidas = new List<Data>();
+                }
             }
+            else
+            {
+                File.Create("C:\\Users\\Public\\Partidas.json");
+            }
+
+        }
+        protected bool validarArchivos()
+        {
+            return
+                File.Exists(partidasFile);
         }
     }
 }
