@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Balancedesaldos.cs" />
     <Compile Include="Class\Data.cs" />
     <Compile Include="Class\DataToGeneralBalance.cs" />
     <Compile Include="Class\GeneralBalance.cs" />

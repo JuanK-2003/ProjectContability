@@ -42,6 +42,9 @@ namespace ProjectContability
                 File.Create("C:\\Users\\Public\\Partidas.json");
             }
 
+            Balancedesaldos bs = new Balancedesaldos();
+            dataGridView2.DataSource = new BindingList<DataToGeneralBalance>(bs.GenerateBalanceSaldos(partidas));
+
             GeneralBalance gb = new GeneralBalance();
             dataGridView1.DataSource = new BindingList<DataToGeneralBalance>(gb.GenerateGeneralBalance(partidas));
         }
