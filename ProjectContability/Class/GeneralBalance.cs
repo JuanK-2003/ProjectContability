@@ -36,7 +36,7 @@ namespace ProjectContability.Class
                             if (zidx < 0) // no esta incluida
                             {
                                 AcountNames.Add(cuentas[cidx].NameCuenta);
-                                AcountBalance.Add(0);
+                                AcountBalance.Add(cuentas[cidx].Credit - cuentas[cidx].Debit);
                             }
                             else AcountBalance[zidx] = AcountBalance[zidx] + cuentas[cidx].Credit - cuentas[cidx].Debit;
                         }

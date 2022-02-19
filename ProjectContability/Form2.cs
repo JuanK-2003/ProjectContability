@@ -120,7 +120,7 @@ namespace ProjectContability
                     int val = valiButton();
                     this.cuentaDisponible.Add(new Data(textBox1.Text.ToUpper(), 0,
                         0, val/3, val%3));
-                    this.comboBox1.Items.Add(textBox1.Text);
+                    this.comboBox1.Items.Add(textBox1.Text.ToUpper());
                     textBox1.Text = "";
                 }
 
