@@ -66,7 +66,7 @@ namespace ProjectContability.Class
                     if (type1idx == 2) break;
                 }
 
-                if (sum != 0)
+                if (sum >= 0)
                 {
                     APCsum[type1idx] = sum;
                     dataToDisplay.Add(new DataToGeneralBalance("SUMA TOTAL " + type1Heading[type1idx], "", sum + ""));
