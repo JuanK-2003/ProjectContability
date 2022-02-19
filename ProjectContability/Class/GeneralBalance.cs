@@ -42,6 +42,11 @@ namespace ProjectContability.Class
                         }
                     }
 
+                    for (int idxg = 0; idxg < AcountBalance.Count; idxg++)
+                    {
+                        AcountBalance[idxg] = Math.Abs(AcountBalance[idxg]);
+                    }
+
                     if (AcountNames.Count > 0)
                     {
                         if (type1idx == 2) dataToDisplay.Add(new DataToGeneralBalance(type1Heading[type1idx]));

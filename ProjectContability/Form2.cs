@@ -67,6 +67,8 @@ namespace ProjectContability
 
 
             }
+
+            radioButton1.Checked = true;
         }
         
         protected bool validarArchivos()
@@ -106,10 +108,7 @@ namespace ProjectContability
             {
                 return 6;
             }
-            else
-            {
-                return -1;
-            }
+
             return -1;
         }
         private void button1_Click(object sender, EventArgs e)
@@ -119,7 +118,7 @@ namespace ProjectContability
                 if(this.valiButton() != -1 )
                 {
                     int val = valiButton();
-                    this.cuentaDisponible.Add(new Data(textBox1.Text, 0,
+                    this.cuentaDisponible.Add(new Data(textBox1.Text.ToUpper(), 0,
                         0, val/3, val%3));
                     this.comboBox1.Items.Add(textBox1.Text);
                     textBox1.Text = "";
@@ -131,6 +130,10 @@ namespace ProjectContability
                     sw.Close();
                 }
             }
+            else
+            {
+                MessageBox.Show("Debe ingresar un nombre de cuenta primero!", "ERROR 001", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -138,27 +141,38 @@ namespace ProjectContability
 
             if(this.comboBox1.SelectedIndex != -1 && (textBox2.Text != "" || textBox3.Text != ""))
             {
-                double credito = 0;
-                double debito = 0;
-                if(textBox2.Text != "")
+                try
                 {
-                    credito = double.Parse(textBox2.Text);
+                    double credito = 0;
+                    double debito = 0;
+                    if (textBox2.Text != "")
+                    {
+                        credito = double.Parse(textBox2.Text);
+                    }
+                    if (textBox3.Text != "")
+                    {
+                        debito = double.Parse(textBox3.Text);
+                    }
+                    partidas.Add(new Data(this.cuentaDisponible[comboBox1.SelectedIndex].NameCuenta,
+                                          credito, debito, cuentaDisponible[comboBox1.SelectedIndex].Type1,
+                                          cuentaDisponible[comboBox1.SelectedIndex].Type2));
+                    using (StreamWriter sr = new StreamWriter(partidasFile))
+                    {
+                        sr.Write(JsonConvert.SerializeObject(partidas));
+                        sr.Close();
+                    }
+                    textBox2.Text = "";
+                    textBox3.Text = "";
+                    comboBox1.SelectedIndex = -1;
                 }
-                if(textBox3.Text != "")
+                catch
                 {
-                    debito = double.Parse(textBox3.Text);
+                    MessageBox.Show("Datos inválidos, recuerde que el saldo debe ser un número!", "ERROR 003", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                partidas.Add(new Data(this.cuentaDisponible[comboBox1.SelectedIndex].NameCuenta,
-                                      credito, debito, cuentaDisponible[comboBox1.SelectedIndex].Type1,
-                                      cuentaDisponible[comboBox1.SelectedIndex].Type2));
-                using(StreamWriter sr = new StreamWriter(partidasFile))
-                {
-                    sr.Write(JsonConvert.SerializeObject(partidas));
-                    sr.Close();
-                }
-                textBox2.Text = "";
-                textBox3.Text = "";
-                comboBox1.SelectedIndex = -1;
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar una cuenta e ingresar un saldo valido", "ERROR 002", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
         }
@@ -236,6 +250,7 @@ namespace ProjectContability
             if (checkBox1.Checked == true)
             {
                 textBox3.Enabled = false;
+                checkBox2.Checked = false;
             }
             else if(checkBox1.Checked == false)
             {
@@ -248,6 +263,7 @@ namespace ProjectContability
             if(checkBox2.Checked == true)
             {
                 textBox2.Enabled = false;
+                checkBox1.Checked = false;
             }
             else if(checkBox2.Checked == false)
             {

@@ -36,14 +36,14 @@ namespace ProjectContability
                 {
                     partidas = new List<Data>();
                 }
-
-                MessageBox.Show(partidas.Count() + " " + partidas[0].NameCuenta);
             }
             else
             {
                 File.Create("C:\\Users\\Public\\Partidas.json");
             }
 
+            GeneralBalance gb = new GeneralBalance();
+            dataGridView1.DataSource = new BindingList<DataToGeneralBalance>(gb.GenerateGeneralBalance(partidas));
         }
         protected bool validarArchivos()
         {

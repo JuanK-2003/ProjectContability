@@ -81,13 +81,13 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(12, 170);
+            this.radioButton2.Location = new System.Drawing.Point(277, 170);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(208, 33);
+            this.radioButton2.Size = new System.Drawing.Size(246, 33);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Activo Corriente";
+            this.radioButton2.Text = "Activo No Corriente";
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
@@ -105,13 +105,13 @@
             // 
             this.radioButton6.AutoSize = true;
             this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(284, 349);
+            this.radioButton6.Location = new System.Drawing.Point(13, 343);
             this.radioButton6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(113, 33);
+            this.radioButton6.Size = new System.Drawing.Size(201, 33);
             this.radioButton6.TabIndex = 30;
             this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Capital";
+            this.radioButton6.Text = "Pasivo Diferido";
             this.radioButton6.UseVisualStyleBackColor = true;
             this.radioButton6.CheckedChanged += new System.EventHandler(this.radioButton6_CheckedChanged);
             // 
@@ -151,13 +151,13 @@
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(238, 170);
+            this.radioButton3.Location = new System.Drawing.Point(13, 220);
             this.radioButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(246, 33);
+            this.radioButton3.Size = new System.Drawing.Size(193, 33);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Activo No Corriente";
+            this.radioButton3.Text = "Activo Diferido";
             this.radioButton3.UseVisualStyleBackColor = true;
             this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
@@ -165,13 +165,13 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(12, 225);
+            this.radioButton1.Location = new System.Drawing.Point(12, 170);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(193, 33);
+            this.radioButton1.Size = new System.Drawing.Size(208, 33);
             this.radioButton1.TabIndex = 29;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Activo Diferido";
+            this.radioButton1.Text = "Activo Corriente";
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_1);
             // 
@@ -193,13 +193,13 @@
             // 
             this.radioButton7.AutoSize = true;
             this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(12, 341);
+            this.radioButton7.Location = new System.Drawing.Point(284, 343);
             this.radioButton7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(201, 33);
+            this.radioButton7.Size = new System.Drawing.Size(113, 33);
             this.radioButton7.TabIndex = 33;
             this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Pasivo Diferido";
+            this.radioButton7.Text = "Capital";
             this.radioButton7.UseVisualStyleBackColor = true;
             this.radioButton7.CheckedChanged += new System.EventHandler(this.radioButton7_CheckedChanged);
             // 
@@ -314,7 +314,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(204, 51);
             this.button3.TabIndex = 36;
-            this.button3.Text = "reiniciar sesion";
+            this.button3.Text = "Reiniciar sesión";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
