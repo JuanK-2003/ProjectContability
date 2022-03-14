@@ -17,11 +17,11 @@ using iTextSharp.text;
 
 namespace ProjectContability
 {
-    public partial class Form5 : Form
+    public partial class Form3 : Form
     {
         List<Data> partidas = new List<Data>();
         string partidasFile = "C:\\Users\\Public\\Partidas.json";
-        public Form5()
+        public Form3()
         {
             InitializeComponent();
         }
@@ -136,7 +136,7 @@ namespace ProjectContability
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void newButton1_Click(object sender, EventArgs e)
         {
             this.balanceSaldosPDF();
             this.balanceGeneralPDF();
@@ -173,12 +173,17 @@ namespace ProjectContability
             xlWorkSheet.PasteSpecial(CR, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, true);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void newButton2_Click(object sender, EventArgs e)
         {
             copyAlltoClipboard();
             excel();
             copyAlltoClipboard2();
             excel();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

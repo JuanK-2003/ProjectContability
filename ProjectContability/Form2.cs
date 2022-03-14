@@ -111,7 +111,7 @@ namespace ProjectContability
 
             return -1;
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void newButton1_Click(object sender, EventArgs e)
         {
             if(textBox1.Text != "")
             {
@@ -136,7 +136,7 @@ namespace ProjectContability
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void newButton2_Click(object sender, EventArgs e)
         {
 
             if(this.comboBox1.SelectedIndex != -1 && (textBox2.Text != "" || textBox3.Text != ""))
@@ -176,7 +176,7 @@ namespace ProjectContability
             }
             
         }
-        private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             radioButton2.Checked = false;
             radioButton3.Checked = false;
@@ -186,7 +186,7 @@ namespace ProjectContability
             radioButton7.Checked = false;
         }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        private void radioButton2_CheckedChanged_1(object sender, EventArgs e)
         {
             radioButton1.Checked = false;
             radioButton3.Checked = false;
@@ -206,7 +206,7 @@ namespace ProjectContability
             radioButton7.Checked = false;
         }
 
-        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        private void radioButton4_CheckedChanged_1(object sender, EventArgs e)
         {
             radioButton1.Checked = false;
             radioButton3.Checked = false;
@@ -215,7 +215,7 @@ namespace ProjectContability
             radioButton6.Checked = false;
             radioButton7.Checked = false;
         }
-        private void radioButton5_CheckedChanged(object sender, EventArgs e)
+        private void radioButton5_CheckedChanged_1(object sender, EventArgs e)
         {
             radioButton1.Checked = false;
             radioButton3.Checked = false;
@@ -225,7 +225,7 @@ namespace ProjectContability
             radioButton7.Checked = false;
         }
 
-        private void radioButton6_CheckedChanged(object sender, EventArgs e)
+        private void radioButton6_CheckedChanged_1(object sender, EventArgs e)
         {
             radioButton1.Checked = false;
             radioButton3.Checked = false;
@@ -235,7 +235,7 @@ namespace ProjectContability
             radioButton7.Checked = false;
         }
 
-        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        private void radioButton7_CheckedChanged_1(object sender, EventArgs e)
         {
             radioButton1.Checked = false;
             radioButton3.Checked = false;
@@ -245,7 +245,7 @@ namespace ProjectContability
             radioButton6.Checked = false;
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
         {
             if (checkBox1.Checked == true)
             {
@@ -258,7 +258,7 @@ namespace ProjectContability
             }
         }
 
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        private void checkBox2_CheckedChanged_1(object sender, EventArgs e)
         {
             if(checkBox2.Checked == true)
             {
@@ -276,7 +276,7 @@ namespace ProjectContability
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void newButton3_Click(object sender, EventArgs e)
         {
             var myFile = File.Create("C:\\Users\\Public\\Cuenta.json"); myFile.Close();
             var myFile2 = File.Create("C:\\Users\\Public\\Partidas.json"); myFile2.Close();
